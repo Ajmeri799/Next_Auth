@@ -3,7 +3,7 @@ import authService from "@/appwrite/auth";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import React, { useState, useEffect } from "react";
-export default function Home() {
+export default function Bord() {
   const [user, setUser] = useState<{ email: string; name: string } | null>(
     null
   );
@@ -33,6 +33,7 @@ export default function Home() {
   if (!user) {
     return <h1>Loading...</h1>;
   }
+
   return (
     <div className=" flex justify-evenly">
       <div>
